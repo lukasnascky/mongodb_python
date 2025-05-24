@@ -20,12 +20,15 @@ The activities explore fundamental concepts of NoSQL databases and demonstrate h
 ## 👤 Author & Contact
 
 Developed by **Lucas da Silva Nascimento** – [@lukasnascky](https://github.com/lukasnascky)  
+Co-authored by **Arthur Almeida de Souza** – [@ArthurSouzaDev](https://github.com/ArthurSouzaDev)
 
+Feel free to get in touch:
+
+**Lucas da Silva Nascimento**
 - ✉️ Email: [lucas.nascimento@rede.ulbra.br](mailto:lucas.nascimento@rede.ulbra.br)  
 - 📷 Instagram: [@lukas_nascky](https://www.instagram.com/lukas_nascky/)  
-- 💼 LinkedIn: [lukas_nascky](https://www.linkedin.com/in/lucas-da-silva-nascimento-1720302a3/)
+- 💼 LinkedIn: [Lucas da Silva Nascimento](https://www.linkedin.com/in/lucas-da-silva-nascimento-1720302a3/)
 
-And **Arthur Almeida de Souza** [@ArthurSouzaDev](https://github.com/ArthurSouzaDev)
-
-- 📷 Instagram: [@manzinidev](https://www.instagram.com/manzinidev/)
+**Arthur Almeida de Souza**
+- 📷 Instagram: [@manzinidev](https://www.instagram.com/manzinidev/)  
 - 💼 LinkedIn: [arthursouzs](https://www.linkedin.com/in/arthursouzs/)
