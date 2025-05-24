@@ -6,10 +6,8 @@ cliente = MongoClient("mongodb+srv://lucasnascimento:lusak2025@cluster0.aptlpuj.
 banco = cliente.get_database("GerenciadorTarefas")
 tarefas = banco.get_collection("ListaTarefas")
 
-# Exemplo de uso
-adicionar_tarefa(tarefas, "Estudar MongoDB", "Revisar operações básicas para a prova", ["estudo", "banco de dados"])
-
 while True:
+    print("\n" + "-"*40)
     print("Escolha uma opção:")
     print("1. Adicionar tarefa")
     print("2. Listar tarefas")
@@ -20,6 +18,7 @@ while True:
     opcao = input("Opção: ")
 
     if opcao == "1":
+        print("\n" + "-"*40)
         titulo = input("Título da tarefa: ")
         descricao = input("Descrição da tarefa: ")
         tags = input("Tags (separadas por vírgula): ").split(",")
@@ -28,6 +27,7 @@ while True:
 
     elif opcao == "2": 
         todas_tarefas = listar_tarefas(tarefas)
+        print("\n" + "-"*40)
         for tarefa in todas_tarefas:
             print("-" * 40)
             print(f"ID: {tarefa['_id']}")
@@ -42,6 +42,7 @@ while True:
         print("-" * 40)
 
     elif opcao == "3":
+        print("\n" + "-"*40)
         id_tarefa = input("ID da tarefa a modificar: ")
         novo_status = input("Novo status (pendente/concluída): ")
         nova_descricao = input("Nova descrição: ")
@@ -50,11 +51,13 @@ while True:
         print("Tarefa modificada com sucesso!")
 
     elif opcao == "4":
+        print("\n" + "-"*40)
         id_tarefa = input("ID da tarefa a remover: ")
         remover_tarefa(tarefas, id_tarefa)
         print("Tarefa removida com sucesso!")
 
     elif opcao == "5":
+        print("\n" + "-"*40)
         id_tarefa = input("ID da tarefa a comentar: ")
         texto_comentario = input("Texto do comentário: ")
         inserir_comentario(tarefas, id_tarefa, texto_comentario)
