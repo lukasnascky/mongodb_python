@@ -16,6 +16,15 @@ The activities explore fundamental concepts of NoSQL databases and demonstrate h
 - [PyMongo](https://pymongo.readthedocs.io/en/stable/)
 
 ---
+## 👨‍💻 Dependencies to use
+PyMongoDb
+
+To install PyMongo, you can use the following command in your terminal or command prompt
+
+```
+pip install pymongo
+```
+---
 
 ## 👤 Author & Contact
 
