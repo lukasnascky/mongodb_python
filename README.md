@@ -24,6 +24,7 @@ To install PyMongo, you can use the following command in your terminal or comman
 ```
 pip install pymongo
 ```
+
 ---
 
 ## 👤 Author & Contact
