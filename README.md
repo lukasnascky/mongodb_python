@@ -118,14 +118,14 @@ Using the provided credentials is only intended for demonstration and testing pu
 - Redis is used exclusively for metrics.
 - Task objects are stored as Python dictionaries and converted to MongoDB documents.
 - Redis metrics use `hincrby`, `zincrby`, `hget`, `hgetall`, and `zrevrange` commands.
-- Time-based analysis (daily/weekly) is handled with Python’s `datetime`.
+- Time-based analysis (daily/weekly) is handled with Python's `datetime`.
 
 ---
 
 ## 👤 Author & Contact
 
-Developed by **Lucas da Silva Nascimento** – [@lukasnascky](https://github.com/lukasnascky)  
-Co-authored by **Arthur Almeida de Souza** – [@ArthurSouzaDev](https://github.com/ArthurSouzaDev)
+Developed by **Lucas da Silva Nascimento** - [@lukasnascky](https://github.com/lukasnascky)  
+Co-authored by **Arthur Almeida de Souza** - [@ArthurSouzaDev](https://github.com/ArthurSouzaDev)
 
 Feel free to get in touch:
 
