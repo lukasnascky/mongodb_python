@@ -3,7 +3,7 @@ from func import *
 import datetime 
 
 cliente = MongoClient(
-    "mongodb+srv://ArthurSouza:210913@cluster0.dqda2cv.mongodb.net/"
+    "mongodb+srv://ArthurSouza:SenhaFicticia@cluster0.dqda2cv.mongodb.net/"
     "?retryWrites=true&w=majority&appName=Cluster0"
 )
 banco = cliente.get_database("GerenciadorTarefas")
