@@ -2,7 +2,6 @@ from pymongo import MongoClient
 from func import *
 import datetime 
 
-# Conexão com MongoDB Atlas
 cliente = MongoClient(
     "mongodb+srv://ArthurSouza:210913@cluster0.dqda2cv.mongodb.net/"
     "?retryWrites=true&w=majority&appName=Cluster0"
@@ -101,29 +100,27 @@ while True:
                 print(f"  {tag.decode()}: {int(score)}")
 
         print("\nEstatísticas de produtividade:")
-        # Tempo médio para conclusão
+        
         stats = redis_client.hgetall(f"user:{user_id}:stats:productivity")
         soma_tempo = float(stats.get(b"soma_tempo_conclusao", 0))
         num_concluidas = int(stats.get(b"num_tarefas_concluidas", 0))
         tempo_medio = soma_tempo / num_concluidas if num_concluidas else 0
         print(f"  Tempo médio de conclusão (segundos): {tempo_medio:.2f}")
 
-        # Tarefas criadas hoje (baseado em user:<user_id>:tasks:created)
         chave_created = f"user:{user_id}:tasks:created"
         valor_criadas = redis_client.hget(chave_created, data_hoje)
         qtd_criadas = int(valor_criadas) if valor_criadas else 0
         print(f"  Tarefas criadas hoje: {qtd_criadas}")
 
-        # Taxa de conclusão semanal
         hoje = datetime.datetime.now().date()
         total_concluidas_semana = 0
         total_criadas_semana = 0
         for i in range(7):
             dia = (hoje - datetime.timedelta(days=i)).strftime("%Y-%m-%d")
-            # soma concluídas deste dia
+            
             qc = redis_client.hget(chave_completed, dia)
             total_concluidas_semana += int(qc) if qc else 0
-            # soma criadas deste dia
+            
             qc2 = redis_client.hget(chave_created, dia)
             total_criadas_semana += int(qc2) if qc2 else 0
 

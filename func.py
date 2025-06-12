@@ -3,7 +3,7 @@ from bson.objectid import ObjectId
 import datetime
 from redis import Redis
 
-# Configuração do Redis
+
 redis_client = Redis(host='localhost', port=6379, db=0)
 DEFAULT_USER_ID = "13"  # User id pré-definido
 user_id = DEFAULT_USER_ID
